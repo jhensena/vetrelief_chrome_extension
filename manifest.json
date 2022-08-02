@@ -1,0 +1,16 @@
+{
+  "name": "Vetrelief Extension",
+  "description": "This is Vetrelief Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://vetrelief.com/*"],
+      "js": ["lib/jquery-3.6.0.min.js", "constants.js", "content-script.js"]
+    }
+  ],
+  "host_permissions": ["https://vetrelief.com/"]
+}
