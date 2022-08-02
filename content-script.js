@@ -1,10 +1,10 @@
 function fetchJobData() {
   const jobData = document.querySelectorAll('#main_content_Admin table:nth-of-type(2) tr:nth-of-type(2) td');
   // const jobUrl = jobData[0].innerHTML;
-  const jobId = jobData[0].childNodes[0].innerHTML;
-  const hospitalEmail = jobData[3].innerHTML;
+  const jobId = jobData[2].childNodes[0].innerHTML;
+  const hospitalEmail = jobData[5].innerHTML;
   // const hospitalNameWithLink = jobData[4].innerHTML;
-  let hospitalName = jobData[4].childNodes[0]?.textContent;
+  let hospitalName = jobData[6].childNodes[0]?.textContent;
   hospitalName = hospitalName?.substring(0, hospitalName.length - 2);
 
   return {
