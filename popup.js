@@ -54,7 +54,7 @@ function getSearchParams(url, key) {
 function buildTemplate({ jobId, email, name }) {
   return `Email Address: ${email}
 Hello ${name},
-You are receiving this email because your account has an active Permanent Job posted, open to bids from veterinarians. (${jobId})
+You are receiving this email because your account has an active Permanent Job posted, open to bids from veterinarians. (Job ID#${jobId})
 
 
 
